@@ -13,10 +13,11 @@ There should be whitespace between paragraphs. We recommend including a README, 
 # EDUCACION
 
 <dl>
-<dt>2021 - Magister en ciencias de la ing. electrónica</dt>
-<dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
+<dt>2021 - Universidad Técnica Federico Santa María - Valparaíso, Chile</dt>
+<dd>Magister en ciencias de la ing. electrónica</dd>
+<dt>2021 - Universidad Técnica Federico Santa María - Valparaíso, Chile</dt>
+<dd>Ingeniería civil electrónica</dd>
 </dl>
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2
 
