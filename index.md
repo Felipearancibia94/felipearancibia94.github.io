@@ -19,6 +19,15 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
 </dl>
 
+# EXPERIENCIA
+
+<dl>
+<dt>Junio 2021 - Actualidad. KAUEL</dt>
+<dd>Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos</dd>
+<dt>2021 - Ingeniería civil electrónica</dt>
+<dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
+</dl>
+
 ## Header 2
 
 > This is a blockquote following a header.
