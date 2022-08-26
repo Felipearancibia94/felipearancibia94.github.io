@@ -15,7 +15,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>2021 - Magister en ciencias de la ing. electrónica</dt>
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
-<dt>2021 - Ingeniería civil electrónica</dt>
+<dt>2021 - Ingeniería civil electrónica <i class="bi bi-bandaid-fill"></i> </dt>
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
 </dl>
 
