@@ -26,14 +26,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>Junio 2021 - Actualidad. Kauel</dt>
 <dd>Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos</dd>
-<dt>2021 - Ingeniería civil electrónica</dt>
-<dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
-</dl>
 
+**Proyectos Destacados**,
+*   Cálculo automático de volumen de paquetes, cajas y pallets
+*   Detección y conteo de cajas y etiquetas en un pallet.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+<dl>
+<dt>Enero 2021 - Marzo 2021. AC3E</dt>
+<dd>Apoyo técnico y de desarrollo</dd>
+
+**Proyectos Destacados**,
+*   Envío y recepción de datos a través de una red inalámbrica.
 
 ## Header 2
 
