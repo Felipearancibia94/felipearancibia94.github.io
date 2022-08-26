@@ -15,12 +15,11 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>2021 - Magister en ciencias de la ing. electrónica</dt>
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
 <dt>2021 - Ingeniería civil electrónica</dt>
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
 </dl>
+
+
 
 # EXPERIENCIA
 
@@ -30,6 +29,11 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dt>2021 - Ingeniería civil electrónica</dt>
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
 </dl>
+
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
 
 ## Header 2
 
@@ -56,9 +60,6 @@ end
 
 #### Header 4
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
 
 ##### Header 5
 
