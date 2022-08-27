@@ -19,8 +19,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
 </dl>
 
-
-
 # EXPERIENCIA
 
 <dl>
@@ -39,6 +37,10 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 **Proyectos Destacados**,
 *   Envío y recepción de datos a través de una red inalámbrica.
+
+# PUBLICACIONES
+
+[Parameter Estimation over Wired Networks with Time-Delay and Packet Collision](https://ieeexplore.ieee.org/abstract/document/8987445).
 
 ## Header 2
 
