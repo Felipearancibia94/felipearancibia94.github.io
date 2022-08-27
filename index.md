@@ -26,7 +26,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>Junio 2021 - Actualidad. Kauel</dt>
 <dd>Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos</dd>
-<dl>
+</dl>
 
 **Proyectos Destacados**,
 *   Cálculo automático de volumen de paquetes, cajas y pallets
@@ -35,7 +35,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>Enero 2021 - Marzo 2021. AC3E</dt>
 <dd>Apoyo técnico y de desarrollo</dd>
-<dl>
+</dl>
 
 **Proyectos Destacados**,
 *   Envío y recepción de datos a través de una red inalámbrica.
