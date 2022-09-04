@@ -30,7 +30,7 @@ Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos
 -   Cálculo automático de volumen de paquetes, cajas y pallets
   - Python ![Python](./assets/img/piton.png)
   - MongoDB
-  - API-Rest <img src="./assets/img/api.png" width="200" height="100">
+  - API-Rest <img src="./assets/img/api.png" width="10" height="10">
 
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
