@@ -14,39 +14,40 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # EDUCACION
 
-<dl>
-<dt>2021 - Magister en ciencias de la ing. electrónica</dt>
-<dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
-<dt>2021 - Ingeniería civil electrónica</dt>
-<dd>Universidad Técnica Federico Santa María - Valparaíso, Chile</dd>
-</dl>
+**2021 - Magister en ciencias de la ing. electrónica** <br />
+_Universidad Técnica Federico Santa María - Valparaíso, Chile_
+
+**2021 - Ingeniería civil electrónica** <br />
+_Universidad Técnica Federico Santa María - Valparaíso, Chile_
 
 # EXPERIENCIA
 
 **Junio 2021 - Actualidad. Kauel** <br />
-Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos
+_Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos_
 
 **Proyectos Destacados**
 
-- Cálculo automático de volumen de paquetes, cajas y pallets
-  - Palabras claves:
+- _Cálculo automático de volumen de paquetes, cajas y pallets_
+- _Detección y conteo de cajas y etiquetas en un pallet._
+- Tecnologías usadas:
     - <img src="./assets/img/piton.png" width="20" height="20"> Python.
     - <img src="./assets/img/api.png" width="20" height="20"> API-Rest.
     - <img src="./assets/img/website-content.png" width="20" height="20"> Visión Artificial
     - <img src="./assets/img/database-storage.png" width="20" height="20"> Base de datos.
     - <img src="./assets/img/git.png" width="20" height="20"> Control de versiones
-  - Palabras
-  
-*   Detección y conteo de cajas y etiquetas en un pallet.
 
-<dl>
-<dt>Enero 2021 - Marzo 2021. AC3E</dt>
-<dd>Apoyo técnico y de desarrollo</dd>
-</dl> 
+**Enero 2021 - Marzo 2021. AC3E** <br />
+_Apoyo técnico y de desarrollo_
 
-**Proyectos Destacados**,
-*   Envío y recepción de datos a través de una red inalámbrica.
+**Proyectos Destacados**
 
+- _Envío y recepción de datos a través de una red inalámbrica._
+- Tecnologías usadas:
+    - <img src="./assets/img/piton.png" width="20" height="20"> Python.
+    - <img src="./assets/img/wifi-routery.png" width="20" height="20"> Analizador de protocolos.
+    - <img src="./assets/img/database-storage.png" width="20" height="20"> Base de datos.
+    - <img src="./assets/img/git.png" width="20" height="20"> Control de versiones.
+    - 
 # PUBLICACIONES
 
 [2019 - Parameter Estimation over Wired Networks with Time-Delay and Packet Collision - IEEE CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)](https://ieeexplore.ieee.org/abstract/document/8987445).
