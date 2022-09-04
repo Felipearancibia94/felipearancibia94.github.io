@@ -6,7 +6,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs sa sadad <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">.
+There should be whitespace between paragraphs sa sadad <link rel="shortcut icon" type="image/x-icon" href="assets/img/python.ico">.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
@@ -27,7 +27,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 </dl>
 
 **Proyectos Destacados**,
-*   Cálculo automático de volumen de paquetes, cajas y palletswasasw <FontAwesomeIcon icon="fas fa-python" />
+*   Cálculo automático de volumen de paquetes, cajas y pallets
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
 <dl>
