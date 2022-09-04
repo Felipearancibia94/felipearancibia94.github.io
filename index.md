@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# EN PROGRESO...
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
@@ -24,10 +26,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>Junio 2021 - Actualidad. Kauel</dt>
 <dd>Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos</dd>
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
 </dl>
 
 **Proyectos Destacados**,
 *   Cálculo automático de volumen de paquetes, cajas y pallets
+
+
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
 <dl>
