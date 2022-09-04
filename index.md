@@ -27,7 +27,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 </dl>
 
 **Proyectos Destacados**,
-*   Cálculo automático de volumen de paquetes, cajas y pallets
+*   Cálculo automático de volumen de paquetes, cajas y pallets <i class="fas fa-python"></i>
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
 <dl>
@@ -40,7 +40,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # PUBLICACIONES
 
-[Parameter Estimation over Wired Networks with Time-Delay and Packet Collision](https://ieeexplore.ieee.org/abstract/document/8987445).
+[2019 - Parameter Estimation over Wired Networks with Time-Delay and Packet Collision - IEEE CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)](https://ieeexplore.ieee.org/abstract/document/8987445).
 
 ## Header 2
 
