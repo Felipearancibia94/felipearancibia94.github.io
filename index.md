@@ -27,7 +27,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 </dl>
 
 **Proyectos Destacados**,
-*   Cálculo automático de volumen de paquetes, cajas y palletswasasw <i class="fas fa-python"></i>
+*   Cálculo automático de volumen de paquetes, cajas y palletswasasw <FontAwesomeIcon icon="fas fa-python" />
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
 <dl>
