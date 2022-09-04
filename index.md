@@ -28,14 +28,15 @@ Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos
 
 **Proyectos Destacados**
 
--  Cálculo automático de volumen de paquetes, cajas y pallets
+- Cálculo automático de volumen de paquetes, cajas y pallets
   - Palabras claves:
     - <img src="./assets/img/piton.png" width="20" height="20"> Python.
-    - <img src="./assets/img/database-storage.png" width="20" height="20"> Base de datos.
     - <img src="./assets/img/api.png" width="20" height="20"> API-Rest.
     - <img src="./assets/img/website-content.png" width="20" height="20"> Visión Artificial
-    - Control de versiones
+    - <img src="./assets/img/database-storage.png" width="20" height="20"> Base de datos.
+    - <img src="./assets/img/git.png" width="20" height="20"> Control de versiones
   - Palabras
+  
 *   Detección y conteo de cajas y etiquetas en un pallet.
 
 <dl>
