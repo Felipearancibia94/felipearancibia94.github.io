@@ -44,10 +44,10 @@ _Apoyo técnico y de desarrollo_
 - _Envío y recepción de datos a través de una red inalámbrica._
 - Tecnologías usadas:
     - <img src="./assets/img/piton.png" width="20" height="20"> Python.
-    - <img src="./assets/img/wifi-routery.png" width="20" height="20"> Analizador de protocolos.
+    - <img src="./assets/img/wifi-router.png" width="20" height="20"> Analizador de protocolos.
     - <img src="./assets/img/database-storage.png" width="20" height="20"> Base de datos.
     - <img src="./assets/img/git.png" width="20" height="20"> Control de versiones.
-    - 
+
 # PUBLICACIONES
 
 [2019 - Parameter Estimation over Wired Networks with Time-Delay and Packet Collision - IEEE CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)](https://ieeexplore.ieee.org/abstract/document/8987445).
