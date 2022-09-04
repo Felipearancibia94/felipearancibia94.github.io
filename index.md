@@ -23,11 +23,12 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # EXPERIENCIA
 
-**Junio 2021 - Actualidad. Kauel**
+**Junio 2021 - Actualidad. Kauel** <br />
 Ingeniero en desarrollo - Área de inteligencia artificial y Ciencia de datos
 
-**Proyectos Destacados**,
--   Cálculo automático de volumen de paquetes, cajas y pallets
+**Proyectos Destacados**
+
+-  Cálculo automático de volumen de paquetes, cajas y pallets
   - Python <img src="./assets/img/piton.png" width="20" height="20">
   - MongoDB
   - API-Rest <img src="./assets/img/api.png" width="20" height="20">
