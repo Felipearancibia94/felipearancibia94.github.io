@@ -6,7 +6,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs.
+There should be whitespace between paragraphs sa sadad <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
@@ -33,7 +33,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <dl>
 <dt>Enero 2021 - Marzo 2021. AC3E</dt>
 <dd>Apoyo técnico y de desarrollo</dd>
-</dl>
+</dl> 
 
 **Proyectos Destacados**,
 *   Envío y recepción de datos a través de una red inalámbrica.
