@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe Arancibia · Ingeniero en IA y ciencia de datos</title>
+  <meta name="description" content="Portafolio de Felipe Arancibia Carrasco, ingeniero civil electrónico especializado en visión artificial y ciencia de datos aplicadas a logística: medición de volumen, conteo de cajas y sistemas en producción.">
+  <meta name="author" content="Felipe Arancibia Carrasco">
+  <link rel="canonical" href="https://felipearancibia94.github.io/">
+  <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Felipe Arancibia">
+  <meta property="og:title" content="Felipe Arancibia · Ingeniero en IA y ciencia de datos">
+  <meta property="og:description" content="Visión artificial y ciencia de datos aplicadas a logística. Proyectos, habilidades y contacto.">
+  <meta property="og:url" content="https://felipearancibia94.github.io/">
+  <meta property="og:image" content="https://felipearancibia94.github.io/assets/img/felipe_face.jpg">
+  <meta property="og:image:alt" content="Retrato de Felipe Arancibia">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23B23F1B'/%3E%3Cpath d='M9 24V8h12v3.5H13V14h7v3.5h-7V24z' fill='%23F3EFE6'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Felipe Arancibia Carrasco",
+    "jobTitle": "Ingeniero en desarrollo, inteligencia artificial y ciencia de datos",
+    "url": "https://felipearancibia94.github.io/",
+    "image": "https://felipearancibia94.github.io/assets/img/felipe_face.jpg",
+    "email": "mailto:felipearancibiac94@gmail.com",
+    "sameAs": [
+      "https://github.com/felipearancibia94",
+      "https://www.linkedin.com/in/felipearancibia94"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Técnica Federico Santa María"
+    }
+  }
+  </script>
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <style>
+    /* ---------- Tokens ---------- */
+    :root {
+      color-scheme: light dark;
+      --bg: #F3EFE6;
+      --surface: #FBF9F4;
+      --ink: #171C19;
+      --muted: #565C57;
+      --line: #D8D2C3;
+      --tag: #E8E2D2;
+      --accent: #B23F1B;
+      --accent-ink: #FFFFFF;
+      --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --gutter: clamp(1.25rem, 5vw, 4rem);
+      --max: 76rem;
+      --radius: 6px;
+      --ease: cubic-bezier(.2, .7, .2, 1);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0E1411;
+        --surface: #151D19;
+        --ink: #ECE7DA;
+        --muted: #9CA59E;
+        --line: #26322B;
+        --tag: #1C2721;
+        --accent: #FF8F66;
+        --accent-ink: #0E1411;
+      }
+    }
+
+    /* ---------- Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em; }
+    h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+    ul, ol { padding: 0; list-style: none; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+    ::selection { background: var(--accent); color: var(--accent-ink); }
+
+    .wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap;
+    }
+    .skip {
+      position: absolute; left: var(--gutter); top: -4rem; z-index: 100;
+      background: var(--accent); color: var(--accent-ink);
+      padding: .6rem 1rem; border-radius: var(--radius); font-weight: 600;
+      transition: top .2s var(--ease);
+    }
+    .skip:focus { top: .75rem; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--bg);
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s;
+    }
+    .site-header.scrolled { border-bottom-color: var(--line); }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 4rem; }
+    .brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
+    .brand-mark {
+      display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 7px;
+      background: var(--accent); color: var(--accent-ink);
+      font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+    }
+    .nav ul { display: flex; gap: clamp(.9rem, 2.5vw, 2rem); }
+    .nav a {
+      position: relative; display: inline-block; padding: .35rem 0;
+      font-size: .92rem; color: var(--muted); text-decoration: none; transition: color .2s;
+    }
+    .nav a::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: .1rem; height: 1px;
+      background: var(--accent); transform: scaleX(0); transform-origin: left;
+      transition: transform .3s var(--ease);
+    }
+    .nav a:hover, .nav a[aria-current="true"] { color: var(--ink); }
+    .nav a:hover::after, .nav a[aria-current="true"]::after { transform: scaleX(1); }
+
+    /* ---------- Hero ---------- */
+    .hero { position: relative; padding-block: clamp(3rem, 9vw, 7rem) clamp(4rem, 10vw, 8rem); overflow: hidden; }
+    .hero::before {
+      content: ""; position: absolute; top: 0; right: 0; width: min(60%, 44rem); height: 80%;
+      background-image: radial-gradient(var(--line) 1.2px, transparent 1.3px);
+      background-size: 22px 22px;
+      -webkit-mask-image: linear-gradient(to bottom left, #000 10%, transparent 75%);
+      mask-image: linear-gradient(to bottom left, #000 10%, transparent 75%);
+      pointer-events: none;
+    }
+    .hero-grid { position: relative; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 1.5rem; row-gap: 3rem; align-items: start; }
+    .hero-text { grid-column: 1 / 9; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
+    }
+    .eyebrow::before { content: ""; width: 2rem; height: 1px; background: currentColor; }
+    h1 {
+      margin-top: 1.5rem;
+      font-family: var(--font-display); font-weight: 400;
+      font-size: clamp(3rem, 9.5vw, 6.75rem); line-height: .96; letter-spacing: -.03em;
+      font-variation-settings: "opsz" 144;
+    }
+    h1 span { display: block; }
+    h1 em { font-style: italic; font-weight: 400; color: var(--accent); }
+    .role {
+      margin-top: 1.75rem;
+      font-size: clamp(1.05rem, 2vw, 1.25rem); font-weight: 500; color: var(--ink);
+    }
+    .lead { margin-top: .75rem; max-width: 34rem; color: var(--muted); font-size: clamp(1.05rem, 1.8vw, 1.2rem); }
+    .actions { margin-top: 2.25rem; display: flex; flex-wrap: wrap; gap: .75rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: .55rem;
+      padding: .8rem 1.3rem; border-radius: 999px; border: 1px solid var(--ink);
+      font-weight: 500; font-size: .95rem; text-decoration: none;
+      transition: background .25s, color .25s, border-color .25s, transform .25s var(--ease);
+    }
+    .btn svg { width: 1em; height: 1em; transition: transform .25s var(--ease); }
+    .btn:hover svg { transform: translateX(3px); }
+    .btn-primary { background: var(--ink); color: var(--bg); }
+    .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    .portrait { grid-column: 9 / 13; margin-top: 4.5rem; position: relative; }
+    .portrait-frame { position: relative; }
+    .portrait-frame::before {
+      content: ""; position: absolute; inset: 0; border: 1px solid var(--accent);
+      transform: translate(14px, 14px); border-radius: var(--radius); transition: transform .4s var(--ease);
+    }
+    .portrait:hover .portrait-frame::before { transform: translate(8px, 8px); }
+    .portrait img {
+      position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%;
+      border-radius: var(--radius); background: var(--tag);
+    }
+    .portrait figcaption { margin-top: 1.6rem; font-size: .82rem; color: var(--muted); }
+
+    /* ---------- Sections ---------- */
+    section { scroll-margin-top: 4rem; }
+    .section { padding-block: clamp(3.5rem, 8vw, 6.5rem); border-top: 1px solid var(--line); }
+    .section-grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 1.5rem; row-gap: 2.25rem; }
+    .section-head { grid-column: 1 / 4; align-self: start; position: sticky; top: 6rem; }
+    .section-body { grid-column: 4 / 13; }
+    .section-num { display: block; font-size: .8rem; font-weight: 600; letter-spacing: .14em; color: var(--accent); font-variant-numeric: tabular-nums; }
+    h2 {
+      margin-top: .5rem;
+      font-family: var(--font-display); font-weight: 400;
+      font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.02em;
+    }
+    h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: -.01em; line-height: 1.2; }
+
+    /* About */
+    .about { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+    .about-copy p + p { margin-top: 1.2rem; }
+    .about-copy p:first-child { font-size: 1.2rem; line-height: 1.55; }
+    .about-copy strong { font-weight: 600; box-shadow: inset 0 -.4em 0 color-mix(in srgb, var(--accent) 22%, transparent); }
+    .path h3 { font-size: 1rem; font-family: var(--font-body); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-size: .78rem; }
+    .path ol { margin-top: 1rem; border-left: 1px solid var(--line); }
+    .path li { position: relative; padding: 0 0 1.5rem 1.4rem; }
+    .path li:last-child { padding-bottom: 0; }
+    .path li::before {
+      content: ""; position: absolute; left: -4px; top: .55rem; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--bg); border: 1.5px solid var(--accent);
+    }
+    .path time, .path .when { display: block; font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .path .what { display: block; font-weight: 500; line-height: 1.35; margin-top: .1rem; }
+    .path .where { display: block; font-size: .92rem; color: var(--muted); line-height: 1.45; }
+    .path a { text-decoration-color: var(--accent); }
+    .path a:hover { color: var(--accent); }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.25rem; }
+    .card {
+      position: relative; display: flex; flex-direction: column; gap: 1rem;
+      padding: clamp(1.4rem, 2.5vw, 2rem);
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      transition: transform .35s var(--ease), border-color .25s, box-shadow .35s var(--ease);
+    }
+    .card:hover, .card:focus-within { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, .35); }
+    .card:nth-child(1) { grid-column: span 3; border-top: 3px solid var(--accent); }
+    .card:nth-child(2) { grid-column: span 3; margin-top: 3rem; }
+    .card:nth-child(n+3) { grid-column: span 2; }
+    .card:nth-child(4) { margin-top: 2rem; }
+    .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .78rem; color: var(--muted); }
+    .card-kind { font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+    .card-idx { font-variant-numeric: tabular-nums; }
+    .card h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
+    .card:nth-child(1) h3 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); }
+    .card p { color: var(--muted); font-size: 1rem; line-height: 1.6; }
+    .stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
+    .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
+    .card-link {
+      display: inline-flex; align-items: center; gap: .45rem;
+      font-weight: 500; font-size: .95rem; color: var(--ink); text-decoration: none;
+    }
+    .card-link::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); } /* tarjeta completa clicable */
+    .card-link svg { width: 1em; height: 1em; transition: transform .25s var(--ease); }
+    .card:hover .card-link, .card-link:focus-visible { color: var(--accent); }
+    .card:hover .card-link svg { transform: translate(3px, -3px); }
+    .card-link:focus-visible { outline: none; }
+    .card:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: clamp(1.5rem, 3vw, 2.5rem); }
+    .skill-group h3 { font-size: 1.15rem; padding-bottom: .75rem; border-bottom: 1px solid var(--line); }
+    .skill-group p { margin-top: .75rem; font-size: .92rem; color: var(--muted); line-height: 1.5; }
+    .tags { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+    .tags li {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .4rem .85rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+      font-size: .92rem; font-weight: 500; cursor: default;
+      transition: border-color .2s, color .2s, transform .25s var(--ease);
+    }
+    .tags li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
+    .tags li:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .skill-group:first-child .tags li { font-size: 1rem; padding: .5rem 1rem; }
+
+    /* Contact */
+    .contact-mail {
+      display: inline-block; max-width: 100%;
+      font-family: var(--font-display); font-size: clamp(1.4rem, 4.2vw, 3rem); line-height: 1.15; letter-spacing: -.02em;
+      overflow-wrap: anywhere; text-decoration: none;
+      background: linear-gradient(var(--accent), var(--accent)) 0 100% / 100% 2px no-repeat;
+      padding-bottom: .15em; transition: background-size .35s var(--ease), color .25s;
+    }
+    .contact-mail:hover { color: var(--accent); background-size: 0 2px; background-position: 100% 100%; }
+    .contact-note { margin-top: 1.25rem; max-width: 34rem; color: var(--muted); }
+    .contact-list { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+    .contact-list li { border-bottom: 1px solid var(--line); }
+    .contact-list a {
+      display: flex; align-items: center; gap: 1rem; padding: 1.1rem .25rem;
+      text-decoration: none; transition: padding .3s var(--ease), color .2s;
+    }
+    .contact-list a:hover { padding-left: 1rem; color: var(--accent); }
+    .contact-list .ico { width: 1.35rem; height: 1.35rem; flex: none; }
+    .contact-list .label { font-weight: 500; min-width: 6.5rem; }
+    .contact-list .handle { color: var(--muted); font-size: .95rem; overflow-wrap: anywhere; }
+    .contact-list .arrow { margin-left: auto; width: 1.1rem; height: 1.1rem; flex: none; transition: transform .25s var(--ease); }
+    .contact-list a:hover .arrow { transform: translate(3px, -3px); }
+    .copy-row { margin-top: 1.25rem; display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+    .copy-btn {
+      font: inherit; font-size: .9rem; font-weight: 500; cursor: pointer;
+      padding: .5rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink);
+      transition: border-color .2s, color .2s;
+    }
+    .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .copy-btn[hidden] { display: none; }
+    .copy-status { font-size: .88rem; color: var(--muted); }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--line); padding-block: 2rem; font-size: .88rem; color: var(--muted); }
+    .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; }
+    .site-footer a { text-decoration: none; }
+    .site-footer a:hover { color: var(--accent); }
+
+    /* ---------- Reveal on scroll ---------- */
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); transition-delay: var(--d, 0s); }
+    .js .reveal.in { opacity: 1; transform: none; }
+    /* Las tarjetas combinan reveal y hover: tras entrar, el hover recupera su transición propia */
+    .js .card.reveal.in { transition: transform .35s var(--ease), border-color .25s, box-shadow .35s var(--ease), opacity .7s var(--ease); transition-delay: 0s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .js .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 62rem) {
+      .hero-text { grid-column: 1 / 13; }
+      .portrait { grid-column: 1 / 8; margin-top: 0; max-width: 20rem; }
+      .section-head { grid-column: 1 / 13; position: static; }
+      .section-body { grid-column: 1 / 13; }
+      .about { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: 1fr 1fr; }
+      .skill-group:first-child { grid-column: 1 / -1; }
+      .card:nth-child(1) { grid-column: span 6; }
+      .card:nth-child(n+2) { grid-column: span 3; margin-top: 0; }
+      .card:nth-child(5) { grid-column: span 6; }
+    }
+    @media (max-width: 40rem) {
+      body { font-size: 1rem; }
+      .brand-name { display: none; }
+      .nav a { font-size: .82rem; white-space: nowrap; }
+      .nav ul { gap: .8rem; }
+      .hero::before { width: 90%; height: 45%; }
+      .portrait { grid-column: 1 / 13; max-width: 16rem; }
+      .projects { grid-template-columns: 1fr; }
+      .card:nth-child(n) { grid-column: 1 / -1; margin-top: 0; }
+      .skills { grid-template-columns: 1fr; }
+      .contact-list .label { min-width: 5.5rem; }
+      .contact-list .handle { display: none; }
+    }
+    @media (max-width: 23rem) { .site-header .wrap { gap: .5rem; } .brand-mark { width: 1.75rem; height: 1.75rem; font-size: .9rem; } .nav ul { gap: .5rem; } .nav a { font-size: .76rem; } }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Felipe Arancibia, inicio">
+        <span class="brand-mark" aria-hidden="true">FA</span>
+        <span class="brand-name">Felipe Arancibia</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="nombre">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow reveal">Ingeniero en IA y ciencia de datos</p>
+            <h1 id="nombre" class="reveal" style="--d:.08s">
+              <span>Felipe</span>
+              <span><em>Arancibia</em></span>
+              <span>Carrasco</span>
+            </h1>
+            <p class="role reveal" style="--d:.16s">Ingeniero civil electrónico · Visión artificial y datos</p>
+            <p class="lead reveal" style="--d:.22s">Diseño sistemas que miran el mundo físico —cajas, pallets, paquetes— y lo convierten en medidas, conteos y decisiones confiables, desde el modelo hasta la API que lo pone en producción.</p>
+            <div class="actions reveal" style="--d:.3s">
+              <a class="btn btn-primary" href="#proyectos">Ver proyectos
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#contacto">Escríbeme</a>
+            </div>
+          </div>
+
+          <figure class="portrait reveal" style="--d:.2s">
+            <div class="portrait-frame">
+              <img src="assets/img/felipe_face.jpg" width="560" height="560" alt="Retrato de Felipe Arancibia, sonriendo levemente frente a la cámara" fetchpriority="high">
+            </div>
+            <figcaption>Visión artificial para logística, en producción desde 2021.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi" aria-labelledby="h-sobre">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">01</span>
+            <h2 id="h-sobre">Sobre mí</h2>
+          </div>
+          <div class="section-body">
+            <div class="about">
+              <div class="about-copy">
+                <p class="reveal">Soy ingeniero civil electrónico y Magíster en Ciencias de la Ingeniería Electrónica por la Universidad Técnica Federico Santa María. Mi formación viene del mundo de las <strong>señales, las redes y la estimación</strong>, y hoy la aplico a problemas de inteligencia artificial.</p>
+                <p class="reveal" style="--d:.06s">Desde junio de 2021 trabajo en Kauel, en el área de inteligencia artificial y ciencia de datos. Allí desarrollo soluciones de <strong>visión artificial para logística</strong>: calcular automáticamente el volumen de paquetes, cajas y pallets, y detectar y contar cajas y etiquetas sobre un pallet. Me interesa que cada modelo termine siendo un servicio que alguien pueda usar, por eso construyo también las APIs y las bases de datos que lo sostienen.</p>
+                <p class="reveal" style="--d:.12s">Me considero proactivo y analítico, trabajo bien en equipo y tolero la presión cuando hay que resolver un problema. Sigo aprendiendo: complementé mi formación con <em>AI for Medicine</em> (DeepLearning.AI) y la certificación HCIA Artificial Intelligence de Huawei.</p>
+              </div>
+
+              <aside class="path reveal" style="--d:.1s" aria-labelledby="h-path">
+                <h3 id="h-path">Trayectoria</h3>
+                <ol>
+                  <li>
+                    <span class="when">Jun 2021 — hoy</span>
+                    <span class="what">Ingeniero en desarrollo, IA y ciencia de datos</span>
+                    <span class="where">Kauel</span>
+                  </li>
+                  <li>
+                    <span class="when">Ene — Mar 2021</span>
+                    <span class="what">Apoyo técnico y de desarrollo</span>
+                    <span class="where">AC3E</span>
+                  </li>
+                  <li>
+                    <span class="when">Formación</span>
+                    <span class="what">Ingeniería civil electrónica y Magíster en Ciencias de la Ingeniería Electrónica</span>
+                    <span class="where">Universidad Técnica Federico Santa María, Valparaíso</span>
+                  </li>
+                  <li>
+                    <span class="when">2019 · Publicación</span>
+                    <span class="what"><a href="https://ieeexplore.ieee.org/abstract/document/8987445" target="_blank" rel="noopener noreferrer">IEEE CHILECON<span class="sr-only"> (se abre en una pestaña nueva)</span></a></span>
+                    <span class="where">Estimación de parámetros en redes cableadas</span>
+                  </li>
+                  <li>
+                    <span class="when">Certificaciones</span>
+                    <span class="what"><a href="https://coursera.org/verify/specialization/M82JU5EPPYZA" target="_blank" rel="noopener noreferrer">AI for Medicine<span class="sr-only"> (se abre en una pestaña nueva)</span></a></span>
+                    <span class="where">DeepLearning.AI · y HCIA Artificial Intelligence (Huawei)</span>
+                  </li>
+                </ol>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="h-proyectos">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">02</span>
+            <h2 id="h-proyectos">Proyectos</h2>
+          </div>
+          <div class="section-body">
+            <ul class="projects" role="list">
+              <li class="card reveal">
+                <div class="card-top"><span class="card-kind">Producción · Kauel</span><span class="card-idx">01</span></div>
+                <h3>Cálculo automático de volumen de paquetes, cajas y pallets</h3>
+                <p>Sistema de visión artificial que estima las dimensiones y el volumen de la carga a partir de imágenes, reemplazando la medición manual en la operación logística. Expuesto como servicio mediante una API REST para integrarse con los sistemas del cliente.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>Python</li><li>Visión artificial</li><li>API REST</li><li>Base de datos</li><li>Git</li>
+                </ul>
+                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20c%C3%A1lculo%20de%20volumen">Código privado — conversemos
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+
+              <li class="card reveal" style="--d:.08s">
+                <div class="card-top"><span class="card-kind">Producción · Kauel</span><span class="card-idx">02</span></div>
+                <h3>Detección y conteo de cajas y etiquetas en un pallet</h3>
+                <p>Detección de objetos para contar cajas y verificar etiquetas sobre un pallet, apoyando el control de despacho con datos trazables.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>Python</li><li>Visión artificial</li><li>Ciencia de datos</li>
+                </ul>
+                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20conteo%20de%20cajas%20y%20etiquetas">Código privado — conversemos
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+
+              <li class="card reveal">
+                <div class="card-top"><span class="card-kind">Investigación · AC3E</span><span class="card-idx">03</span></div>
+                <h3>Datos sobre redes inalámbricas</h3>
+                <p>Envío y recepción de datos a través de una red inalámbrica, con captura y análisis del tráfico para validar el comportamiento del enlace.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>Python</li><li>Analizador de protocolos</li><li>Base de datos</li>
+                </ul>
+                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20redes%20inal%C3%A1mbricas%20AC3E">Más detalles por correo
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+
+              <li class="card reveal" style="--d:.08s">
+                <div class="card-top"><span class="card-kind">Paper · IEEE</span><span class="card-idx">04</span></div>
+                <h3>Parameter Estimation over Wired Networks with Time-Delay and Packet Collision</h3>
+                <p>Publicación presentada en CHILECON 2019 sobre estimación de parámetros en redes cableadas con retardo y colisión de paquetes.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>Estimación</li><li>Redes</li><li>Teoría de control</li>
+                </ul>
+                <a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/8987445" target="_blank" rel="noopener noreferrer">Leer en IEEE Xplore<span class="sr-only"> (se abre en una pestaña nueva)</span>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+
+              <li class="card reveal" style="--d:.16s">
+                <div class="card-top"><span class="card-kind">Open source</span><span class="card-idx">05</span></div>
+                <h3>Este portafolio</h3>
+                <p>Un único archivo HTML sin frameworks: modo claro y oscuro automático, navegación por teclado y animaciones que respetan <em>prefers-reduced-motion</em>.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li>
+                </ul>
+                <a class="card-link" href="https://github.com/felipearancibia94/felipearancibia94.github.io" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="sr-only"> (se abre en una pestaña nueva)</span>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades" aria-labelledby="h-skills">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">03</span>
+            <h2 id="h-skills">Habilidades</h2>
+          </div>
+          <div class="section-body">
+            <div class="skills">
+              <div class="skill-group reveal">
+                <h3>IA y datos</h3>
+                <p>Mi día a día: de la imagen cruda a una medida utilizable.</p>
+                <ul class="tags">
+                  <li>Visión artificial</li><li>Aprendizaje automático</li><li>Deep learning</li><li>Ciencia de datos</li><li>Detección de objetos</li><li>Análisis de datos</li>
+                </ul>
+              </div>
+              <div class="skill-group reveal" style="--d:.08s">
+                <h3>Ingeniería de software</h3>
+                <p>Para que los modelos lleguen a producción.</p>
+                <ul class="tags">
+                  <li>Python</li><li>API REST</li><li>Bases de datos</li><li>Git</li>
+                </ul>
+              </div>
+              <div class="skill-group reveal" style="--d:.16s">
+                <h3>Electrónica y redes</h3>
+                <p>La base de mi formación.</p>
+                <ul class="tags">
+                  <li>Redes inalámbricas</li><li>Análisis de protocolos</li><li>Estimación de parámetros</li><li>Procesamiento de señales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="h-contacto">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">04</span>
+            <h2 id="h-contacto">Contacto</h2>
+          </div>
+          <div class="section-body">
+            <p class="reveal">
+              <a class="contact-mail" id="email-link" href="mailto:felipearancibiac94@gmail.com">felipearancibiac94@gmail.com</a>
+            </p>
+            <p class="contact-note reveal" style="--d:.06s">¿Tienes un problema de visión artificial, datos o un proyecto en el que pueda aportar? Escríbeme y te respondo lo antes posible.</p>
+            <div class="copy-row reveal" style="--d:.1s">
+              <button class="copy-btn" id="copy-btn" type="button" hidden>Copiar correo</button>
+              <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+            </div>
+
+            <ul class="contact-list reveal" style="--d:.14s">
+              <li>
+                <a href="https://github.com/felipearancibia94" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                  <span class="label">GitHub</span><span class="handle">github.com/felipearancibia94</span>
+                  <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                  <span class="sr-only">(se abre en una pestaña nueva)</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/felipearancibia94" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  <span class="label">LinkedIn</span><span class="handle">linkedin.com/in/felipearancibia94</span>
+                  <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                  <span class="sr-only">(se abre en una pestaña nueva)</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:felipearancibiac94@gmail.com">
+                  <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+                  <span class="label">Correo</span><span class="handle">felipearancibiac94@gmail.com</span>
+                  <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Felipe Arancibia Carrasco · Hecho a mano con HTML, CSS y un poco de JS.</p>
+      <p><a href="#top">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Año del footer
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Sombra/borde del header al hacer scroll
+      var header = document.querySelector('.site-header');
+      var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Animación de entrada al hacer scroll
+      var items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !reduce) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        items.forEach(function (el) { io.observe(el); });
+      } else {
+        items.forEach(function (el) { el.classList.add('in'); });
+      }
+
+      // Enlace de navegación activo según la sección visible
+      var links = document.querySelectorAll('.nav a');
+      var map = {};
+      links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              links.forEach(function (a) { a.removeAttribute('aria-current'); });
+              var a = map[e.target.id];
+              if (a) a.setAttribute('aria-current', 'true');
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        Object.keys(map).forEach(function (id) {
+          var s = document.getElementById(id);
+          if (s) spy.observe(s);
+        });
+      }
+
+      // Copiar correo (solo si el navegador lo permite)
+      var btn = document.getElementById('copy-btn');
+      var status = document.getElementById('copy-status');
+      if (btn && navigator.clipboard && window.isSecureContext) {
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          navigator.clipboard.writeText('felipearancibiac94@gmail.com').then(function () {
+            status.textContent = 'Correo copiado.';
+            setTimeout(function () { status.textContent = ''; }, 2500);
+          }, function () {
+            status.textContent = 'No se pudo copiar; usa el enlace.';
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
