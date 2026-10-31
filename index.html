@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Felipe Arancibia · Ingeniero en IA y ciencia de datos</title>
-  <meta name="description" content="Portafolio de Felipe Arancibia Carrasco, ingeniero civil electrónico especializado en visión artificial y ciencia de datos aplicadas a logística: medición de volumen, conteo de cajas y sistemas en producción.">
+  <title>Felipe Arancibia · Ingeniero de Inteligencia Artificial</title>
+  <meta name="description" content="Felipe Arancibia Carrasco, ingeniero civil electrónico e ingeniero de inteligencia artificial: visión por computador, sistemas agénticos con LLMs y despliegue de modelos. Proyectos, trayectoria y publicaciones.">
   <meta name="author" content="Felipe Arancibia Carrasco">
   <link rel="canonical" href="https://felipearancibia94.github.io/">
   <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)">
@@ -13,8 +13,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
   <meta property="og:site_name" content="Felipe Arancibia">
-  <meta property="og:title" content="Felipe Arancibia · Ingeniero en IA y ciencia de datos">
-  <meta property="og:description" content="Visión artificial y ciencia de datos aplicadas a logística. Proyectos, habilidades y contacto.">
+  <meta property="og:title" content="Felipe Arancibia · Ingeniero de Inteligencia Artificial">
+  <meta property="og:description" content="Visión por computador, sistemas agénticos con LLMs y despliegue de modelos. Proyectos, trayectoria y publicaciones.">
   <meta property="og:url" content="https://felipearancibia94.github.io/">
   <meta property="og:image" content="https://felipearancibia94.github.io/assets/img/felipe_face.jpg">
   <meta property="og:image:alt" content="Retrato de Felipe Arancibia">
@@ -24,14 +24,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Felipe Arancibia Carrasco",
-    "jobTitle": "Ingeniero en desarrollo, inteligencia artificial y ciencia de datos",
+    "jobTitle": "Ingeniero de Inteligencia Artificial",
+    "worksFor": { "@type": "Organization", "name": "VSAAS" },
     "url": "https://felipearancibia94.github.io/",
     "image": "https://felipearancibia94.github.io/assets/img/felipe_face.jpg",
     "email": "mailto:felipearancibiac94@gmail.com",
@@ -163,28 +164,26 @@
     h1 {
       margin-top: 1.5rem;
       font-family: var(--font-display); font-weight: 400;
-      font-size: clamp(3rem, 9.5vw, 6.75rem); line-height: .96; letter-spacing: -.03em;
+      font-size: clamp(3rem, 9.5vw, 6.75rem); line-height: .98; letter-spacing: -.03em;
       font-variation-settings: "opsz" 144;
     }
     h1 span { display: block; }
-    h1 em { font-style: italic; font-weight: 400; color: var(--accent); }
     .role {
       margin-top: 1.75rem;
       font-size: clamp(1.05rem, 2vw, 1.25rem); font-weight: 500; color: var(--ink);
     }
-    .lead { margin-top: .75rem; max-width: 34rem; color: var(--muted); font-size: clamp(1.05rem, 1.8vw, 1.2rem); }
+    .lead { margin-top: .75rem; max-width: 36rem; color: var(--muted); font-size: clamp(1.05rem, 1.8vw, 1.2rem); }
     .actions { margin-top: 2.25rem; display: flex; flex-wrap: wrap; gap: .75rem; }
     .btn {
       display: inline-flex; align-items: center; gap: .55rem;
       padding: .8rem 1.3rem; border-radius: 999px; border: 1px solid var(--ink);
       font-weight: 500; font-size: .95rem; text-decoration: none;
-      transition: background .25s, color .25s, border-color .25s, transform .25s var(--ease);
+      transition: background .25s, color .25s, border-color .25s;
     }
     .btn svg { width: 1em; height: 1em; transition: transform .25s var(--ease); }
-    .btn:hover svg { transform: translateX(3px); }
+    .btn:hover svg { transform: translateY(3px); }
     .btn-primary { background: var(--ink); color: var(--bg); }
     .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
     .portrait { grid-column: 9 / 13; margin-top: 4.5rem; position: relative; }
     .portrait-frame { position: relative; }
@@ -218,7 +217,7 @@
     .about-copy p + p { margin-top: 1.2rem; }
     .about-copy p:first-child { font-size: 1.2rem; line-height: 1.55; }
     .about-copy strong { font-weight: 600; box-shadow: inset 0 -.4em 0 color-mix(in srgb, var(--accent) 22%, transparent); }
-    .path h3 { font-size: 1rem; font-family: var(--font-body); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-size: .78rem; }
+    .path h3 { font-family: var(--font-body); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-size: .78rem; }
     .path ol { margin-top: 1rem; border-left: 1px solid var(--line); }
     .path li { position: relative; padding: 0 0 1.5rem 1.4rem; }
     .path li:last-child { padding-bottom: 0; }
@@ -226,7 +225,8 @@
       content: ""; position: absolute; left: -4px; top: .55rem; width: 7px; height: 7px; border-radius: 50%;
       background: var(--bg); border: 1.5px solid var(--accent);
     }
-    .path time, .path .when { display: block; font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .path li.now::before { background: var(--accent); }
+    .path .when { display: block; font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
     .path .what { display: block; font-weight: 500; line-height: 1.35; margin-top: .1rem; }
     .path .where { display: block; font-size: .92rem; color: var(--muted); line-height: 1.45; }
     .path a { text-decoration-color: var(--accent); }
@@ -240,7 +240,9 @@
       background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
       transition: transform .35s var(--ease), border-color .25s, box-shadow .35s var(--ease);
     }
-    .card:hover, .card:focus-within { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, .35); }
+    .card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+    .card--link:hover, .card--link:focus-within { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, .35); }
+    .card--link:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
     .card:nth-child(1) { grid-column: span 3; border-top: 3px solid var(--accent); }
     .card:nth-child(2) { grid-column: span 3; margin-top: 3rem; }
     .card:nth-child(n+3) { grid-column: span 2; }
@@ -248,21 +250,22 @@
     .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .78rem; color: var(--muted); }
     .card-kind { font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
     .card-idx { font-variant-numeric: tabular-nums; }
-    .card h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
-    .card:nth-child(1) h3 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); }
+    .card h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+    .card:nth-child(1) h3 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
     .card p { color: var(--muted); font-size: 1rem; line-height: 1.6; }
+    .card .metric { color: var(--ink); font-weight: 500; }
     .stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
+    .card-foot { font-size: .85rem; color: var(--muted); }
     .card-link {
       display: inline-flex; align-items: center; gap: .45rem;
       font-weight: 500; font-size: .95rem; color: var(--ink); text-decoration: none;
     }
     .card-link::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); } /* tarjeta completa clicable */
     .card-link svg { width: 1em; height: 1em; transition: transform .25s var(--ease); }
-    .card:hover .card-link, .card-link:focus-visible { color: var(--accent); }
-    .card:hover .card-link svg { transform: translate(3px, -3px); }
+    .card--link:hover .card-link { color: var(--accent); }
+    .card--link:hover .card-link svg { transform: translate(3px, -3px); }
     .card-link:focus-visible { outline: none; }
-    .card:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
 
     /* Skills */
     .skills { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: clamp(1.5rem, 3vw, 2.5rem); }
@@ -280,16 +283,7 @@
     .skill-group:first-child .tags li { font-size: 1rem; padding: .5rem 1rem; }
 
     /* Contact */
-    .contact-mail {
-      display: inline-block; max-width: 100%;
-      font-family: var(--font-display); font-size: clamp(1.4rem, 4.2vw, 3rem); line-height: 1.15; letter-spacing: -.02em;
-      overflow-wrap: anywhere; text-decoration: none;
-      background: linear-gradient(var(--accent), var(--accent)) 0 100% / 100% 2px no-repeat;
-      padding-bottom: .15em; transition: background-size .35s var(--ease), color .25s;
-    }
-    .contact-mail:hover { color: var(--accent); background-size: 0 2px; background-position: 100% 100%; }
-    .contact-note { margin-top: 1.25rem; max-width: 34rem; color: var(--muted); }
-    .contact-list { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+    .contact-list { border-top: 1px solid var(--line); }
     .contact-list li { border-bottom: 1px solid var(--line); }
     .contact-list a {
       display: flex; align-items: center; gap: 1rem; padding: 1.1rem .25rem;
@@ -301,15 +295,6 @@
     .contact-list .handle { color: var(--muted); font-size: .95rem; overflow-wrap: anywhere; }
     .contact-list .arrow { margin-left: auto; width: 1.1rem; height: 1.1rem; flex: none; transition: transform .25s var(--ease); }
     .contact-list a:hover .arrow { transform: translate(3px, -3px); }
-    .copy-row { margin-top: 1.25rem; display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
-    .copy-btn {
-      font: inherit; font-size: .9rem; font-weight: 500; cursor: pointer;
-      padding: .5rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink);
-      transition: border-color .2s, color .2s;
-    }
-    .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .copy-btn[hidden] { display: none; }
-    .copy-status { font-size: .88rem; color: var(--muted); }
 
     /* Footer */
     .site-footer { border-top: 1px solid var(--line); padding-block: 2rem; font-size: .88rem; color: var(--muted); }
@@ -339,7 +324,6 @@
       .skill-group:first-child { grid-column: 1 / -1; }
       .card:nth-child(1) { grid-column: span 6; }
       .card:nth-child(n+2) { grid-column: span 3; margin-top: 0; }
-      .card:nth-child(5) { grid-column: span 6; }
     }
     @media (max-width: 40rem) {
       body { font-size: 1rem; }
@@ -353,6 +337,8 @@
       .skills { grid-template-columns: 1fr; }
       .contact-list .label { min-width: 5.5rem; }
       .contact-list .handle { display: none; }
+      .contact-list li:first-child .handle { display: inline; }
+      .contact-list li:first-child .label { display: none; }
     }
     @media (max-width: 23rem) { .site-header .wrap { gap: .5rem; } .brand-mark { width: 1.75rem; height: 1.75rem; font-size: .9rem; } .nav ul { gap: .5rem; } .nav a { font-size: .76rem; } }
   </style>
@@ -384,19 +370,18 @@
       <div class="wrap">
         <div class="hero-grid">
           <div class="hero-text">
-            <p class="eyebrow reveal">Ingeniero en IA y ciencia de datos</p>
+            <p class="eyebrow reveal">Ingeniero civil electrónico</p>
             <h1 id="nombre" class="reveal" style="--d:.08s">
               <span>Felipe</span>
-              <span><em>Arancibia</em></span>
+              <span>Arancibia</span>
               <span>Carrasco</span>
             </h1>
-            <p class="role reveal" style="--d:.16s">Ingeniero civil electrónico · Visión artificial y datos</p>
-            <p class="lead reveal" style="--d:.22s">Diseño sistemas que miran el mundo físico —cajas, pallets, paquetes— y lo convierten en medidas, conteos y decisiones confiables, desde el modelo hasta la API que lo pone en producción.</p>
+            <p class="role reveal" style="--d:.16s">Ingeniero de Inteligencia Artificial en VSAAS</p>
+            <p class="lead reveal" style="--d:.22s">Trabajo en visión por computador y sistemas agénticos basados en LLMs, desde la investigación aplicada hasta el despliegue en entornos con restricciones de latencia.</p>
             <div class="actions reveal" style="--d:.3s">
               <a class="btn btn-primary" href="#proyectos">Ver proyectos
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg>
               </a>
-              <a class="btn btn-ghost" href="#contacto">Escríbeme</a>
             </div>
           </div>
 
@@ -404,7 +389,7 @@
             <div class="portrait-frame">
               <img src="assets/img/felipe_face.jpg" width="560" height="560" alt="Retrato de Felipe Arancibia, sonriendo levemente frente a la cámara" fetchpriority="high">
             </div>
-            <figcaption>Visión artificial para logística, en producción desde 2021.</figcaption>
+            <figcaption>Viña del Mar, Chile.</figcaption>
           </figure>
         </div>
       </div>
@@ -421,38 +406,38 @@
           <div class="section-body">
             <div class="about">
               <div class="about-copy">
-                <p class="reveal">Soy ingeniero civil electrónico y Magíster en Ciencias de la Ingeniería Electrónica por la Universidad Técnica Federico Santa María. Mi formación viene del mundo de las <strong>señales, las redes y la estimación</strong>, y hoy la aplico a problemas de inteligencia artificial.</p>
-                <p class="reveal" style="--d:.06s">Desde junio de 2021 trabajo en Kauel, en el área de inteligencia artificial y ciencia de datos. Allí desarrollo soluciones de <strong>visión artificial para logística</strong>: calcular automáticamente el volumen de paquetes, cajas y pallets, y detectar y contar cajas y etiquetas sobre un pallet. Me interesa que cada modelo termine siendo un servicio que alguien pueda usar, por eso construyo también las APIs y las bases de datos que lo sostienen.</p>
-                <p class="reveal" style="--d:.12s">Me considero proactivo y analítico, trabajo bien en equipo y tolero la presión cuando hay que resolver un problema. Sigo aprendiendo: complementé mi formación con <em>AI for Medicine</em> (DeepLearning.AI) y la certificación HCIA Artificial Intelligence de Huawei.</p>
+                <p class="reveal">Soy ingeniero civil electrónico y Magíster en Ciencias de la Ingeniería Electrónica por la Universidad Técnica Federico Santa María. Vengo del <strong>procesamiento de señales, la teoría de estimación y el control automático</strong>, y esa base es la que aplico hoy a la inteligencia artificial.</p>
+                <p class="reveal" style="--d:.06s">Desde 2021 trabajo en visión por computador para la industria. En Kauel desarrollé servicios de estimación volumétrica desplegados en Edge y Cloud; en ETT Transferencia de Tecnologías trabajé con detección, seguimiento multiobjeto y reconstrucción 3D aplicados a molinos SAG en minería. En ambos casos el trabajo incluía llevar los modelos a producción con APIs y contenedores.</p>
+                <p class="reveal" style="--d:.12s">Actualmente estoy en VSAAS, haciendo I+D sobre plataformas de videovigilancia inteligente. Mi línea de investigación son los <strong>sistemas agénticos</strong>: arquitecturas que combinan percepción visual, memoria contextual y razonamiento con LLMs para gestionar eventos de forma autónoma.</p>
               </div>
 
               <aside class="path reveal" style="--d:.1s" aria-labelledby="h-path">
                 <h3 id="h-path">Trayectoria</h3>
                 <ol>
-                  <li>
-                    <span class="when">Jun 2021 — hoy</span>
-                    <span class="what">Ingeniero en desarrollo, IA y ciencia de datos</span>
-                    <span class="where">Kauel</span>
+                  <li class="now">
+                    <span class="when">2026 — actual</span>
+                    <span class="what">Ingeniero de Inteligencia Artificial</span>
+                    <span class="where">VSAAS · Viña del Mar</span>
                   </li>
                   <li>
-                    <span class="when">Ene — Mar 2021</span>
-                    <span class="what">Apoyo técnico y de desarrollo</span>
-                    <span class="where">AC3E</span>
+                    <span class="when">2025</span>
+                    <span class="what">Ingeniero de Inteligencia Artificial</span>
+                    <span class="where">ETT Transferencia de Tecnologías SpA · Viña del Mar</span>
                   </li>
                   <li>
-                    <span class="when">Formación</span>
-                    <span class="what">Ingeniería civil electrónica y Magíster en Ciencias de la Ingeniería Electrónica</span>
-                    <span class="where">Universidad Técnica Federico Santa María, Valparaíso</span>
+                    <span class="when">2021 — 2024</span>
+                    <span class="what">Ingeniero de Inteligencia Artificial</span>
+                    <span class="where">Kauel · Santiago</span>
                   </li>
                   <li>
-                    <span class="when">2019 · Publicación</span>
-                    <span class="what"><a href="https://ieeexplore.ieee.org/abstract/document/8987445" target="_blank" rel="noopener noreferrer">IEEE CHILECON<span class="sr-only"> (se abre en una pestaña nueva)</span></a></span>
-                    <span class="where">Estimación de parámetros en redes cableadas</span>
+                    <span class="when">2018 — 2020</span>
+                    <span class="what">Magíster en Ciencias de la Ingeniería Electrónica</span>
+                    <span class="where">Universidad Técnica Federico Santa María · Valparaíso</span>
                   </li>
                   <li>
-                    <span class="when">Certificaciones</span>
-                    <span class="what"><a href="https://coursera.org/verify/specialization/M82JU5EPPYZA" target="_blank" rel="noopener noreferrer">AI for Medicine<span class="sr-only"> (se abre en una pestaña nueva)</span></a></span>
-                    <span class="where">DeepLearning.AI · y HCIA Artificial Intelligence (Huawei)</span>
+                    <span class="when">2013 — 2020</span>
+                    <span class="what">Ingeniería Civil Electrónica</span>
+                    <span class="where">Universidad Técnica Federico Santa María · Valparaíso</span>
                   </li>
                 </ol>
               </aside>
@@ -473,61 +458,53 @@
           <div class="section-body">
             <ul class="projects" role="list">
               <li class="card reveal">
-                <div class="card-top"><span class="card-kind">Producción · Kauel</span><span class="card-idx">01</span></div>
-                <h3>Cálculo automático de volumen de paquetes, cajas y pallets</h3>
-                <p>Sistema de visión artificial que estima las dimensiones y el volumen de la carga a partir de imágenes, reemplazando la medición manual en la operación logística. Expuesto como servicio mediante una API REST para integrarse con los sistemas del cliente.</p>
+                <div class="card-top"><span class="card-kind">I+D · VSAAS</span><span class="card-idx">01</span></div>
+                <h3>Sistemas agénticos para la gestión autónoma de eventos en videovigilancia</h3>
+                <p>Arquitectura que integra percepción con visión por computador y modelos visión-lenguaje, memoria dual de corto y largo plazo, y razonamiento y planificación con LLMs. Se valida sobre casos de seguridad reales en la plataforma VSAAS.</p>
                 <ul class="stack" aria-label="Stack">
-                  <li>Python</li><li>Visión artificial</li><li>API REST</li><li>Base de datos</li><li>Git</li>
+                  <li>Python</li><li>LLMs</li><li>Modelos visión-lenguaje</li><li>Tool calling</li><li>FastAPI / gRPC</li>
                 </ul>
-                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20c%C3%A1lculo%20de%20volumen">Código privado — conversemos
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
+                <p class="card-foot">Línea de investigación en desarrollo</p>
               </li>
 
               <li class="card reveal" style="--d:.08s">
                 <div class="card-top"><span class="card-kind">Producción · Kauel</span><span class="card-idx">02</span></div>
-                <h3>Detección y conteo de cajas y etiquetas en un pallet</h3>
-                <p>Detección de objetos para contar cajas y verificar etiquetas sobre un pallet, apoyando el control de despacho con datos trazables.</p>
+                <h3>Estimación volumétrica automatizada</h3>
+                <p>Servicios que estiman el volumen de paquetes, cajas y pallets con pipelines de preprocesamiento de imágenes y redes profundas, distribuidos entre Edge y Cloud. <span class="metric">Margen de error ≤ 5 % en producción.</span></p>
                 <ul class="stack" aria-label="Stack">
-                  <li>Python</li><li>Visión artificial</li><li>Ciencia de datos</li>
+                  <li>Python</li><li>Deep learning</li><li>Docker</li><li>APIs</li><li>Edge / Cloud</li>
                 </ul>
-                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20conteo%20de%20cajas%20y%20etiquetas">Código privado — conversemos
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
+                <p class="card-foot">Proyecto industrial · código privado</p>
               </li>
 
               <li class="card reveal">
-                <div class="card-top"><span class="card-kind">Investigación · AC3E</span><span class="card-idx">03</span></div>
-                <h3>Datos sobre redes inalámbricas</h3>
-                <p>Envío y recepción de datos a través de una red inalámbrica, con captura y análisis del tráfico para validar el comportamiento del enlace.</p>
+                <div class="card-top"><span class="card-kind">Minería · ETT</span><span class="card-idx">03</span></div>
+                <h3>Conteo y desgaste de bolas de molienda</h3>
+                <p>Detección de objetos y seguimiento multiobjeto para contar bolas de molienda y evaluar su geometría y desgaste en ambientes ruidosos, como apoyo a la optimización de la carga en molinos SAG.</p>
                 <ul class="stack" aria-label="Stack">
-                  <li>Python</li><li>Analizador de protocolos</li><li>Base de datos</li>
+                  <li>Python</li><li>Detección de objetos</li><li>Seguimiento multiobjeto</li>
                 </ul>
-                <a class="card-link" href="mailto:felipearancibiac94@gmail.com?subject=Proyecto%3A%20redes%20inal%C3%A1mbricas%20AC3E">Más detalles por correo
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
+                <p class="card-foot">Proyecto industrial · código privado</p>
               </li>
 
               <li class="card reveal" style="--d:.08s">
-                <div class="card-top"><span class="card-kind">Paper · IEEE</span><span class="card-idx">04</span></div>
-                <h3>Parameter Estimation over Wired Networks with Time-Delay and Packet Collision</h3>
-                <p>Publicación presentada en CHILECON 2019 sobre estimación de parámetros en redes cableadas con retardo y colisión de paquetes.</p>
+                <div class="card-top"><span class="card-kind">Minería · ETT</span><span class="card-idx">04</span></div>
+                <h3>Carga interna de molinos SAG</h3>
+                <p>Estimación de la carga interna del molino mediante visión por computador y reconstrucción 3D a partir de secuencias de imágenes.</p>
                 <ul class="stack" aria-label="Stack">
-                  <li>Estimación</li><li>Redes</li><li>Teoría de control</li>
+                  <li>Python</li><li>Visión por computador</li><li>Reconstrucción 3D</li>
                 </ul>
-                <a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/8987445" target="_blank" rel="noopener noreferrer">Leer en IEEE Xplore<span class="sr-only"> (se abre en una pestaña nueva)</span>
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
+                <p class="card-foot">Proyecto industrial · código privado</p>
               </li>
 
-              <li class="card reveal" style="--d:.16s">
-                <div class="card-top"><span class="card-kind">Open source</span><span class="card-idx">05</span></div>
-                <h3>Este portafolio</h3>
-                <p>Un único archivo HTML sin frameworks: modo claro y oscuro automático, navegación por teclado y animaciones que respetan <em>prefers-reduced-motion</em>.</p>
+              <li class="card card--link reveal" style="--d:.16s">
+                <div class="card-top"><span class="card-kind">Paper · IEEE</span><span class="card-idx">05</span></div>
+                <h3>Parameter Estimation over Wired Networks with Time-Delay and Packet Collision</h3>
+                <p>Arancibia, F., Carvajal, R. y Agüero, J. C. IEEE CHILECON 2019, Valparaíso.</p>
                 <ul class="stack" aria-label="Stack">
-                  <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li>
+                  <li>Teoría de estimación</li><li>Redes</li><li>Modelamiento estadístico</li>
                 </ul>
-                <a class="card-link" href="https://github.com/felipearancibia94/felipearancibia94.github.io" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="sr-only"> (se abre en una pestaña nueva)</span>
+                <a class="card-link" href="https://doi.org/10.1109/CHILECON47746.2019.8987445" target="_blank" rel="noopener noreferrer">Leer en IEEE Xplore<span class="sr-only"> (se abre en una pestaña nueva)</span>
                   <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
                 </a>
               </li>
@@ -548,24 +525,24 @@
           <div class="section-body">
             <div class="skills">
               <div class="skill-group reveal">
-                <h3>IA y datos</h3>
-                <p>Mi día a día: de la imagen cruda a una medida utilizable.</p>
+                <h3>IA y visión por computador</h3>
+                <p>Foco actual.</p>
                 <ul class="tags">
-                  <li>Visión artificial</li><li>Aprendizaje automático</li><li>Deep learning</li><li>Ciencia de datos</li><li>Detección de objetos</li><li>Análisis de datos</li>
+                  <li>IA agéntica</li><li>LLMs y tool calling</li><li>Memoria dual espacio-temporal</li><li>Modelos visión-lenguaje</li><li>Visión por computador</li><li>Seguimiento multiobjeto</li><li>Reconstrucción 3D</li><li>Deep learning</li>
                 </ul>
               </div>
               <div class="skill-group reveal" style="--d:.08s">
-                <h3>Ingeniería de software</h3>
-                <p>Para que los modelos lleguen a producción.</p>
+                <h3>Ingeniería y despliegue</h3>
+                <p>Modelos en producción.</p>
                 <ul class="tags">
-                  <li>Python</li><li>API REST</li><li>Bases de datos</li><li>Git</li>
+                  <li>Python</li><li>PyTorch</li><li>Docker</li><li>FastAPI</li><li>gRPC</li><li>Edge computing</li><li>Inferencia en tiempo real</li>
                 </ul>
               </div>
               <div class="skill-group reveal" style="--d:.16s">
-                <h3>Electrónica y redes</h3>
-                <p>La base de mi formación.</p>
+                <h3>Investigación y fundamentos</h3>
+                <p>Formación de base.</p>
                 <ul class="tags">
-                  <li>Redes inalámbricas</li><li>Análisis de protocolos</li><li>Estimación de parámetros</li><li>Procesamiento de señales</li>
+                  <li>Investigación aplicada</li><li>Diseño experimental</li><li>Teoría de estimación</li><li>Procesos estocásticos</li><li>Procesamiento de señales</li><li>Control automático</li>
                 </ul>
               </div>
             </div>
@@ -583,16 +560,14 @@
             <h2 id="h-contacto">Contacto</h2>
           </div>
           <div class="section-body">
-            <p class="reveal">
-              <a class="contact-mail" id="email-link" href="mailto:felipearancibiac94@gmail.com">felipearancibiac94@gmail.com</a>
-            </p>
-            <p class="contact-note reveal" style="--d:.06s">¿Tienes un problema de visión artificial, datos o un proyecto en el que pueda aportar? Escríbeme y te respondo lo antes posible.</p>
-            <div class="copy-row reveal" style="--d:.1s">
-              <button class="copy-btn" id="copy-btn" type="button" hidden>Copiar correo</button>
-              <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
-            </div>
-
-            <ul class="contact-list reveal" style="--d:.14s">
+            <ul class="contact-list reveal">
+              <li>
+                <a href="mailto:felipearancibiac94@gmail.com">
+                  <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+                  <span class="label">Correo</span><span class="handle">felipearancibiac94@gmail.com</span>
+                  <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                </a>
+              </li>
               <li>
                 <a href="https://github.com/felipearancibia94" target="_blank" rel="noopener noreferrer">
                   <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
@@ -609,13 +584,6 @@
                   <span class="sr-only">(se abre en una pestaña nueva)</span>
                 </a>
               </li>
-              <li>
-                <a href="mailto:felipearancibiac94@gmail.com">
-                  <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
-                  <span class="label">Correo</span><span class="handle">felipearancibiac94@gmail.com</span>
-                  <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -625,7 +593,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© <span id="year">2026</span> Felipe Arancibia Carrasco · Hecho a mano con HTML, CSS y un poco de JS.</p>
+      <p>© <span id="year">2026</span> Felipe Arancibia Carrasco</p>
       <p><a href="#top">Volver arriba ↑</a></p>
     </div>
   </footer>
@@ -638,7 +606,7 @@
       var y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
 
-      // Sombra/borde del header al hacer scroll
+      // Borde del header al hacer scroll
       var header = document.querySelector('.site-header');
       var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
       onScroll();
@@ -674,21 +642,6 @@
         Object.keys(map).forEach(function (id) {
           var s = document.getElementById(id);
           if (s) spy.observe(s);
-        });
-      }
-
-      // Copiar correo (solo si el navegador lo permite)
-      var btn = document.getElementById('copy-btn');
-      var status = document.getElementById('copy-status');
-      if (btn && navigator.clipboard && window.isSecureContext) {
-        btn.hidden = false;
-        btn.addEventListener('click', function () {
-          navigator.clipboard.writeText('felipearancibiac94@gmail.com').then(function () {
-            status.textContent = 'Correo copiado.';
-            setTimeout(function () { status.textContent = ''; }, 2500);
-          }, function () {
-            status.textContent = 'No se pudo copiar; usa el enlace.';
-          });
         });
       }
     })();
