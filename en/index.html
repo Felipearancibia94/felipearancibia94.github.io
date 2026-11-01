@@ -267,7 +267,10 @@
     .path a:hover { color: var(--accent); }
 
     /* Projects */
-    .projects { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.25rem; }
+    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+    .projects + .projects { margin-top: 1.25rem; }
+    .projects > .card--wide { grid-column: 1 / -1; }
+    .projects > .card--wide p:not(.card-foot) { max-width: 62ch; }
     .card {
       position: relative; display: flex; flex-direction: column; gap: 1rem;
       padding: clamp(1.4rem, 2.5vw, 2rem);
@@ -277,20 +280,17 @@
     .card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
     .card--link:hover, .card--link:focus-within { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 18px 36px -24px rgba(0, 0, 0, .35); }
     .card--link:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
-    .card:nth-child(1) { grid-column: span 3; border-top: 3px solid var(--accent); }
-    .card:nth-child(2) { grid-column: span 3; margin-top: 3rem; }
-    .card:nth-child(n+3) { grid-column: span 2; }
-    .card:nth-child(4) { margin-top: 2rem; }
     .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .78rem; color: var(--muted); }
     .card-kind { font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
     .card-idx { font-variant-numeric: tabular-nums; }
     .card h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
-    .card:nth-child(1) h3 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
     .card p { color: var(--muted); font-size: 1rem; line-height: 1.6; }
     .card .metric { color: var(--ink); font-weight: 500; }
     .stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
-    .card-foot { font-size: .85rem; color: var(--muted); }
+    .card-foot { display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; font-size: .85rem; color: var(--muted); }
+    .card-foot .card-link { min-height: 2.75rem; }
+    .card--wide .card-foot { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
     .card-link {
       display: inline-flex; align-items: center; gap: .45rem;
       font-weight: 500; font-size: .95rem; color: var(--ink); text-decoration: none;
@@ -355,8 +355,6 @@
       .about { grid-template-columns: 1fr; }
       .skills { grid-template-columns: 1fr 1fr; }
       .skill-group:first-child { grid-column: 1 / -1; }
-      .card:nth-child(1) { grid-column: span 6; }
-      .card:nth-child(n+2) { grid-column: span 3; margin-top: 0; }
     }
     @media (max-width: 40rem) {
       body { font-size: 1rem; }
@@ -370,7 +368,6 @@
       .nav a::after { bottom: .3rem; }
       .hero::before { width: 90%; height: 45%; }
       .projects { grid-template-columns: 1fr; }
-      .card:nth-child(n) { grid-column: 1 / -1; margin-top: 0; }
       .skills { grid-template-columns: 1fr; }
       .contact-list .label { min-width: 5.5rem; }
       .contact-list .handle { display: none; }
@@ -394,6 +391,7 @@
         <ul>
           <li><a href="#sobre-mi">About</a></li>
           <li><a href="#proyectos">Projects</a></li>
+          <li><a href="#publicaciones">Publications</a></li>
           <li><a href="#habilidades">Skills</a></li>
           <li><a href="#contacto">Contact</a></li>
         </ul>
@@ -502,56 +500,91 @@
           </div>
           <div class="section-body">
             <ul class="projects" role="list">
-              <li class="card reveal">
+              <li class="card card--wide reveal">
                 <div class="card-top"><span class="card-kind">R&amp;D · VSAAS</span><span class="card-idx">01</span></div>
                 <h3>Agentic systems for autonomous event management in video surveillance</h3>
                 <p>Proposed architecture that combines computer vision and vision-language models for perception, short- and long-term memory, and LLM-based reasoning and planning. The proposal is to validate it with real security cases on the VSAAS platform.</p>
                 <ul class="stack" aria-label="Stack">
                   <li>Python</li><li>LLMs</li><li>Vision-language models</li><li>Tool calling</li><li>FastAPI / gRPC</li>
                 </ul>
-                <p class="card-foot">Ongoing research</p>
+                <div class="card-foot"><span>Ongoing research</span>
+                </div>
               </li>
 
-              <li class="card reveal" style="--d:.08s">
+              <li class="card reveal" style="--d:0.06s">
                 <div class="card-top"><span class="card-kind">Production · Kauel</span><span class="card-idx">02</span></div>
                 <h3>Automated volume estimation</h3>
                 <p>Services that estimate the volume of packages, boxes and pallets from images, using preprocessing pipelines and deep networks. <span class="metric">Error margin ≤ 5% in production.</span></p>
                 <ul class="stack" aria-label="Stack">
                   <li>Python</li><li>Deep learning</li><li>Docker</li><li>APIs</li><li>Edge / Cloud</li>
                 </ul>
-                <p class="card-foot">Industrial project · private code</p>
+                <div class="card-foot"><span>Industrial project · private code</span>
+                </div>
               </li>
 
-              <li class="card reveal">
+              <li class="card reveal" style="--d:0.12s">
                 <div class="card-top"><span class="card-kind">Mining · ETT</span><span class="card-idx">03</span></div>
                 <h3>Grinding-ball counting and wear monitoring</h3>
                 <p>Object detection and multi-object tracking to count grinding balls automatically and monitor their geometry and wear, as part of optimizing SAG mill load.</p>
                 <ul class="stack" aria-label="Stack">
                   <li>Python</li><li>Object detection</li><li>Multi-object tracking</li>
                 </ul>
-                <p class="card-foot">Industrial project · private code</p>
+                <div class="card-foot"><span>Industrial project · private code</span>
+                </div>
               </li>
 
-              <li class="card reveal" style="--d:.08s">
+              <li class="card reveal" style="--d:0.06s">
                 <div class="card-top"><span class="card-kind">Mining · ETT</span><span class="card-idx">04</span></div>
                 <h3>SAG mill load estimation</h3>
                 <p>Estimating the internal load of SAG mills from image sequences, using computer vision and 3D reconstruction.</p>
                 <ul class="stack" aria-label="Stack">
                   <li>Python</li><li>Computer vision</li><li>3D reconstruction</li>
                 </ul>
-                <p class="card-foot">Industrial project · private code</p>
+                <div class="card-foot"><span>Industrial project · private code</span>
+                </div>
               </li>
 
-              <li class="card card--link reveal" style="--d:.16s">
-                <div class="card-top"><span class="card-kind">Paper · IEEE</span><span class="card-idx">05</span></div>
+              <li class="card card--link reveal" style="--d:0.12s">
+                <div class="card-top"><span class="card-kind">Personal project · In progress</span><span class="card-idx">05</span></div>
+                <h3>Pet monitoring with a depth camera</h3>
+                <p>Local lab for watching cats and dogs with a RealSense camera: detection, tracking, depth-based spatial facts, deterministic event rules and optional descriptions from a local vision-language model. Everything runs on a single machine.</p>
+                <ul class="stack" aria-label="Stack">
+                  <li>Python</li><li>RealSense</li><li>ONNX</li><li>Vision-language models</li><li>SQLite</li>
+                </ul>
+                <div class="card-foot"><span>Under development · tested on synthetic data only</span>
+                  <a class="card-link" href="https://github.com/Felipearancibia94/depth-based-volumetry" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr-only"> (opens in a new tab)</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICACIONES -->
+    <section class="section" id="publicaciones" aria-labelledby="h-publicaciones">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">03</span>
+            <h2 id="h-publicaciones">Publications and conferences</h2>
+          </div>
+          <div class="section-body">
+            <ul class="projects" role="list">
+              <li class="card card--link card--wide reveal">
+                <div class="card-top"><span class="card-kind">Conference paper · IEEE</span><span class="card-idx">01</span></div>
                 <h3>Parameter Estimation over Wired Networks with Time-Delay and Packet Collision</h3>
                 <p>Arancibia, F., Carvajal, R. and Agüero, J. C. IEEE CHILECON 2019, Valparaíso.</p>
                 <ul class="stack" aria-label="Stack">
                   <li>Parameter estimation</li><li>Wired networks</li><li>Packet collisions</li>
                 </ul>
-                <a class="card-link" href="https://doi.org/10.1109/CHILECON47746.2019.8987445" target="_blank" rel="noopener noreferrer">Read on IEEE Xplore<span class="sr-only"> (opens in a new tab)</span>
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
-                </a>
+                <div class="card-foot"><span>Published paper · 2019</span>
+                  <a class="card-link" href="https://doi.org/10.1109/CHILECON47746.2019.8987445" target="_blank" rel="noopener noreferrer">Read on IEEE Xplore<span class="sr-only"> (opens in a new tab)</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -564,7 +597,7 @@
       <div class="wrap">
         <div class="section-grid">
           <div class="section-head reveal">
-            <span class="section-num">03</span>
+            <span class="section-num">04</span>
             <h2 id="h-skills">Skills</h2>
           </div>
           <div class="section-body">
@@ -601,7 +634,7 @@
       <div class="wrap">
         <div class="section-grid">
           <div class="section-head reveal">
-            <span class="section-num">04</span>
+            <span class="section-num">05</span>
             <h2 id="h-contacto">Contact</h2>
           </div>
           <div class="section-body">
