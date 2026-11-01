@@ -281,6 +281,9 @@
     .card:nth-child(2) { grid-column: span 3; margin-top: 3rem; }
     .card:nth-child(n+3) { grid-column: span 2; }
     .card:nth-child(4) { margin-top: 2rem; }
+    .card:nth-child(6) { grid-column: span 6; }
+    .card:nth-child(6) p:not(.card-foot) { max-width: 62ch; }
+    .card:nth-child(6) .stack { margin-top: 0; padding-top: 0; }
     .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .78rem; color: var(--muted); }
     .card-kind { font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
     .card-idx { font-variant-numeric: tabular-nums; }
