@@ -290,6 +290,7 @@
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
     .pet-photo { margin: 0; width: 11rem; flex: none; }
     .pet-photo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: var(--tag); }
+    .pet-note { margin-top: 1.25rem; max-width: 62ch; font-size: .9rem; line-height: 1.6; color: var(--muted); }
     .pet-facts { display: grid; gap: .85rem; }
     .pet-facts dt { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
     .pet-facts dd { margin: .2rem 0 0; font-size: 1rem; line-height: 1.6; color: var(--muted); }
@@ -592,9 +593,10 @@
                   <dl class="pet-facts">
                     <div><dt>Detectado</dt><dd>Gato. Puntaje del detector entre 0,30 y 0,48 en esa captura.</dd></div>
                     <div><dt>Interpretación del modelo local</dt><dd>Descansando o durmiendo: posada sobre una superficie elevada, probablemente un rascador.</dd></div>
+                    <div><dt>Nombre (según el modelo local)</dt><dd>Negrita</dd></div>
                     <div><dt>Incertidumbre</dt><dd>No se ven bien los ojos, así que no se puede saber si duerme o solo descansa.</dd></div>
                   </dl>
-                  <p class="card-foot">Última captura en vivo · el nombre lo asigna su dueño; el sistema aún no identifica animales individuales</p>
+                  <p class="card-foot">Última captura en vivo</p>
                 </div>
               </li>
 
@@ -608,12 +610,14 @@
                   <dl class="pet-facts">
                     <div><dt>Detectado</dt><dd>Gato. Puntaje 0,95 sobre este recorte; en el cuadro completo, tal como salió de la cámara, el mismo animal tuvo un puntaje menor y se etiquetó como perro.</dd></div>
                     <div><dt>Interpretación del modelo local</dt><dd>Descansando o durmiendo: tendida sobre una superficie de madera.</dd></div>
+                    <div><dt>Nombre (según el modelo local)</dt><dd>Nube</dd></div>
                     <div><dt>Incertidumbre</dt><dd>La imagen está borrosa, así que no se puede saber si descansa del todo o se está moviendo.</dd></div>
                   </dl>
-                  <p class="card-foot">Recorte de una captura en vivo, girado 180° porque la cámara entregó la imagen al revés · el nombre lo asigna su dueño; el sistema aún no identifica animales individuales</p>
+                  <p class="card-foot">Recorte de una captura en vivo, girado 180° porque la cámara entregó la imagen al revés</p>
                 </div>
               </li>
             </ul>
+            <p class="pet-note">El nombre lo propone el modelo local: elige de una lista de nombres, guiado por una descripción de cada gata. No es un sistema de reconocimiento. Funcionó sobre recortes guardados y aún no se ha probado en vivo, y puede fallar: una vez nombró a una habitación sin ningún animal.</p>
           </div>
         </div>
       </div>

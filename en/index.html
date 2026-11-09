@@ -290,6 +290,7 @@
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
     .pet-photo { margin: 0; width: 11rem; flex: none; }
     .pet-photo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: var(--tag); }
+    .pet-note { margin-top: 1.25rem; max-width: 62ch; font-size: .9rem; line-height: 1.6; color: var(--muted); }
     .pet-facts { display: grid; gap: .85rem; }
     .pet-facts dt { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
     .pet-facts dd { margin: .2rem 0 0; font-size: 1rem; line-height: 1.6; color: var(--muted); }
@@ -592,9 +593,10 @@
                   <dl class="pet-facts">
                     <div><dt>Detected</dt><dd>Cat. Detector score between 0.30 and 0.48 in that capture.</dd></div>
                     <div><dt>Local model's interpretation</dt><dd>Resting or sleeping: perched on an elevated surface, probably a cat tree.</dd></div>
+                    <div><dt>Name (according to the local model)</dt><dd>Negrita</dd></div>
                     <div><dt>Uncertainty</dt><dd>The eyes are not clearly visible, so it is not possible to tell whether it is asleep or just resting.</dd></div>
                   </dl>
-                  <p class="card-foot">Latest live capture · the name is assigned by its owner; the system does not yet identify individual animals</p>
+                  <p class="card-foot">Latest live capture</p>
                 </div>
               </li>
 
@@ -608,12 +610,14 @@
                   <dl class="pet-facts">
                     <div><dt>Detected</dt><dd>Cat. Score 0.95 on this crop; in the full frame, as it came out of the camera, the same animal scored lower and was labelled dog.</dd></div>
                     <div><dt>Local model's interpretation</dt><dd>Resting or sleeping: lying on a wooden surface.</dd></div>
+                    <div><dt>Name (according to the local model)</dt><dd>Nube</dd></div>
                     <div><dt>Uncertainty</dt><dd>The image is blurry, so it is not possible to tell whether it is fully resting or moving.</dd></div>
                   </dl>
-                  <p class="card-foot">Crop from a live capture, rotated 180° because the camera delivered the image upside down · the name is assigned by its owner; the system does not yet identify individual animals</p>
+                  <p class="card-foot">Crop from a live capture, rotated 180° because the camera delivered the image upside down</p>
                 </div>
               </li>
             </ul>
+            <p class="pet-note">The name is proposed by the local model: it picks from a list of names, guided by a description of each cat. It is not a recognition system. It worked on saved crops and has not been tested live yet, and it can fail: once it named a room with no animal in it.</p>
           </div>
         </div>
       </div>
