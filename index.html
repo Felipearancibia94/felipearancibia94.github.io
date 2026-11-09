@@ -288,8 +288,8 @@
     .card .metric { color: var(--ink); font-weight: 500; }
     .stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
-    .pet-photo { margin: 0; }
-    .pet-photo img { display: block; width: min(100%, 8.5rem); height: auto; aspect-ratio: 137 / 162; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); background: var(--tag); }
+    .pet-photo { margin: 0; width: 11rem; flex: none; }
+    .pet-photo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: var(--tag); }
     .pet-facts { display: grid; gap: .85rem; }
     .pet-facts dt { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
     .pet-facts dd { margin: .2rem 0 0; font-size: 1rem; line-height: 1.6; color: var(--muted); }
@@ -376,6 +376,7 @@
       .hero::before { width: 90%; height: 45%; }
       .projects { grid-template-columns: 1fr; }
       .card--pet { flex-direction: column; }
+      .pet-photo { width: auto; }
       .skills { grid-template-columns: 1fr; }
       .contact-list .label { min-width: 5.5rem; }
       .contact-list .handle { display: none; }
@@ -594,6 +595,22 @@
                     <div><dt>Incertidumbre</dt><dd>No se ven bien los ojos, así que no se puede saber si duerme o solo descansa.</dd></div>
                   </dl>
                   <p class="card-foot">Última captura en vivo · el nombre lo asigna su dueño; el sistema aún no identifica animales individuales</p>
+                </div>
+              </li>
+
+              <li class="card card--wide card--pet reveal" style="--d:.06s">
+                <figure class="pet-photo">
+                  <img src="assets/img/nube.jpg" width="270" height="115" alt="Recorte de la cámara: una gata de tres colores tendida sobre una superficie de madera." loading="lazy" decoding="async">
+                </figure>
+                <div class="pet-body">
+                  <div class="card-top"><span class="card-kind">Mascotas · 9 nov 2026</span><span class="card-idx">02</span></div>
+                  <h3>Nube</h3>
+                  <dl class="pet-facts">
+                    <div><dt>Detectado</dt><dd>Gato. Puntaje 0,95 sobre este recorte; en el cuadro completo, tal como salió de la cámara, el mismo animal tuvo un puntaje menor y se etiquetó como perro.</dd></div>
+                    <div><dt>Interpretación del modelo local</dt><dd>Descansando o durmiendo: tendida sobre una superficie de madera.</dd></div>
+                    <div><dt>Incertidumbre</dt><dd>La imagen está borrosa, así que no se puede saber si descansa del todo o se está moviendo.</dd></div>
+                  </dl>
+                  <p class="card-foot">Recorte de una captura en vivo, girado 180° porque la cámara entregó la imagen al revés · el nombre lo asigna su dueño; el sistema aún no identifica animales individuales</p>
                 </div>
               </li>
             </ul>
