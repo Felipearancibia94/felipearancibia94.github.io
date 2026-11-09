@@ -288,6 +288,13 @@
     .card .metric { color: var(--ink); font-weight: 500; }
     .stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .5rem; }
     .stack li { padding: .2rem .6rem; border-radius: 999px; background: var(--tag); font-size: .78rem; font-weight: 500; }
+    .pet-photo { margin: 0; }
+    .pet-photo img { display: block; width: min(100%, 8.5rem); height: auto; aspect-ratio: 137 / 162; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); background: var(--tag); }
+    .pet-facts { display: grid; gap: .85rem; }
+    .pet-facts dt { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .pet-facts dd { margin: .2rem 0 0; font-size: 1rem; line-height: 1.6; color: var(--muted); }
+    .pet-body { display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
+    .card--pet { flex-direction: row; align-items: flex-start; gap: clamp(1.25rem, 3vw, 2rem); }
     .card-foot { display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; font-size: .85rem; color: var(--muted); }
     .card-foot .card-link { min-height: 2.75rem; }
     .card--wide .card-foot { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
@@ -368,6 +375,7 @@
       .nav a::after { bottom: .3rem; }
       .hero::before { width: 90%; height: 45%; }
       .projects { grid-template-columns: 1fr; }
+      .card--pet { flex-direction: column; }
       .skills { grid-template-columns: 1fr; }
       .contact-list .label { min-width: 5.5rem; }
       .contact-list .handle { display: none; }
@@ -563,12 +571,43 @@
       </div>
     </section>
 
+    <!-- ESTADO DE MASCOTAS -->
+    <section class="section" id="mascotas" aria-labelledby="h-mascotas">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head reveal">
+            <span class="section-num">03</span>
+            <h2 id="h-mascotas">Estado de mascotas</h2>
+          </div>
+          <div class="section-body">
+            <ul class="projects" role="list">
+              <li class="card card--wide card--pet reveal">
+                <figure class="pet-photo">
+                  <img src="assets/img/negrita.jpg" width="137" height="162" alt="Recorte de la cámara: una gata negra mirando al frente." loading="lazy" decoding="async">
+                </figure>
+                <div class="pet-body">
+                  <div class="card-top"><span class="card-kind">Mascotas · 9 nov 2026</span><span class="card-idx">01</span></div>
+                  <h3>Negrita</h3>
+                  <dl class="pet-facts">
+                    <div><dt>Detectado</dt><dd>Gato. Puntaje del detector entre 0,30 y 0,48 en esa captura.</dd></div>
+                    <div><dt>Interpretación del modelo local</dt><dd>Descansando o durmiendo: posada sobre una superficie elevada, probablemente un rascador.</dd></div>
+                    <div><dt>Incertidumbre</dt><dd>No se ven bien los ojos, así que no se puede saber si duerme o solo descansa.</dd></div>
+                  </dl>
+                  <p class="card-foot">Última captura en vivo · el nombre lo asigna su dueño; el sistema aún no identifica animales individuales</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PUBLICACIONES -->
     <section class="section" id="publicaciones" aria-labelledby="h-publicaciones">
       <div class="wrap">
         <div class="section-grid">
           <div class="section-head reveal">
-            <span class="section-num">03</span>
+            <span class="section-num">04</span>
             <h2 id="h-publicaciones">Publicaciones y conferencias</h2>
           </div>
           <div class="section-body">
@@ -597,7 +636,7 @@
       <div class="wrap">
         <div class="section-grid">
           <div class="section-head reveal">
-            <span class="section-num">04</span>
+            <span class="section-num">05</span>
             <h2 id="h-skills">Habilidades</h2>
           </div>
           <div class="section-body">
@@ -634,7 +673,7 @@
       <div class="wrap">
         <div class="section-grid">
           <div class="section-head reveal">
-            <span class="section-num">05</span>
+            <span class="section-num">06</span>
             <h2 id="h-contacto">Contacto</h2>
           </div>
           <div class="section-body">
